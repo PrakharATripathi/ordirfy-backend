@@ -2,7 +2,7 @@ const { username, password } = require("../configs/db.config");
 
 const mongoose = require("mongoose");
 
-mongoose.connect(`mongodb://${username}:${password}@ac-crooikn-shard-00-00.4yaycgk.mongodb.net:27017,ac-crooikn-shard-00-01.4yaycgk.mongodb.net:27017,ac-crooikn-shard-00-02.4yaycgk.mongodb.net:27017/?ssl=true&replicaSet=atlas-7pjcfe-shard-0&authSource=admin&retryWrites=true&w=majority`)
+mongoose.connect("mongodb+srv://tripathiprakhar175:Prakhar$175@cluster-oderify.gmfvm.mongodb.net/?retryWrites=true&w=majority&appName=Cluster-Oderify")
     .then(() => console.log("MongoDb connected"))
     .catch((err) => console.log(err));
 
