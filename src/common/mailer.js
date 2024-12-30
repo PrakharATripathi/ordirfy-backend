@@ -14,6 +14,7 @@ const transporter = nodemailer.createTransport({
 });
 
 const mailer = (email,link) =>{
+
     const mailOptions = {
         from: 'orderify143@gmail.com',
         to: email,
